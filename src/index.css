@@ -1,6 +1,5 @@
 .form-group {
   margin: 20px;
-  
 }
 
 #button_1 {
@@ -14,4 +13,7 @@
 
 .my-custom-table {
   margin: 20px;
+}
+.table {
+  color: aqua !important;
 }

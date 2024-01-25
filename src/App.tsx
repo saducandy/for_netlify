@@ -62,13 +62,15 @@ function App() {
   // });
 
   return (
-    <Box justifyContent="center">
-      <Image
-        borderRadius="full"
-        boxSize="150px"
-        src="https://1.gravatar.com/avatar/2c266fb7631a6cf08471ff13ab3a5f9326e53144a247e7cf414da2458b1a3043?size=256"
-        alt="Dan Abramov"
-      />
+    <>
+      <Box display="flex" alignItems="center" justifyContent="center">
+        <Image
+          borderRadius="full"
+          boxSize="150px"
+          src="https://1.gravatar.com/avatar/2c266fb7631a6cf08471ff13ab3a5f9326e53144a247e7cf414da2458b1a3043?size=256"
+          alt="Dan Abramov"
+        />
+      </Box>
       <Form
         // onClickingSubmit={handleFormSubmit}
         getFromChild={getFromChild}
@@ -78,7 +80,7 @@ function App() {
         deleteItem={deleteFromItemData}
         selectedData={togleItem}
       />
-    </Box>
+    </>
   );
 }
 
