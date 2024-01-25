@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Form from "./components/Form";
 import ListTable from "./components/ListTable";
+import { Box, Center, Image } from "@chakra-ui/react";
 
 function App() {
   const [ItemsData, setItemData] = useState([
@@ -61,17 +62,23 @@ function App() {
   // });
 
   return (
-    <div>
+    <Box justifyContent="center">
+      <Image
+        borderRadius="full"
+        boxSize="150px"
+        src="https://1.gravatar.com/avatar/2c266fb7631a6cf08471ff13ab3a5f9326e53144a247e7cf414da2458b1a3043?size=256"
+        alt="Dan Abramov"
+      />
       <Form
         // onClickingSubmit={handleFormSubmit}
         getFromChild={getFromChild}
-      ></Form>
+      />
       <ListTable
         objParam={filterData}
         deleteItem={deleteFromItemData}
         selectedData={togleItem}
       />
-    </div>
+    </Box>
   );
 }
 
